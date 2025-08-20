@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         bookList.add(Book("Laskar Pelangi", "Andrea Hirata", 2005))
         bookList.add(Book("Bumi", "Tere Liye", 2014))
         bookList.add(Book("Negeri 5 Menara", "Ahmad Fuadi", 2009))
+        bookList.add(Book("Keren", "Iam", 2000))
+        bookList.add(Book("Bangso", "Yadi", 2002))
 
         // Gunakan this untuk context dan bookList untuk data
         bookAdapter = BookAdapter(this, bookList)
