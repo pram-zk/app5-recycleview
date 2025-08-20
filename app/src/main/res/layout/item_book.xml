@@ -19,7 +19,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_alignParentStart="true"
-            android:src="@drawable/logo_zaki" />
+            android:src="@drawable/book1" />
 
         <!-- Judul -->
         <TextView
@@ -53,17 +53,6 @@
             android:layout_marginStart="8dp"
             android:text="2025"
             android:textSize="14sp" />
-
-        <!-- Tombol Hapus -->
-        <ImageButton
-            android:id="@+id/btnDelete"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@android:drawable/ic_menu_delete"
-            android:contentDescription="Hapus Buku" />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
