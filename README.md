@@ -1,5 +1,5 @@
-# Laporan Project Kelompok Daftar Buku Perpustakaan 
-Ini adalah laporan hasil project kelompok yang dibuat secara tim berupa aplikasi Android yang berfungsi untuk menampilkan daftar buku perpustakaan.
+# Laporan Project Kelompok Menampilkan Data Dari API ke RecycleView
+Ini adalah .
 
 ## 👥 Anggota Kelompok
 1. Meriani Putri Suryaningtiyas
@@ -8,14 +8,11 @@ Ini adalah laporan hasil project kelompok yang dibuat secara tim berupa aplikasi
 4. Pramudya Kalya Zaki
 
 ## 🎯 Tujuan Project
-Tujuan dari laporan ini adalah untuk mendokumentasikan proses perancangan dan pembuatan aplikasi Aplikasi Daftar Buku Perpustakaan berbasis Android. Laporan ini menjelaskan tentang penerapan berbagai komponen utama dalam pemrograman Android, seperti Splash Screen, RecyclerView, Intent, Toast, dan Dialog Box. Selain itu, laporan ini juga bertujuan sebagai sarana pembelajaran untuk meningkatkan pemahaman konsep, keterampilan teknis, serta pengalaman praktis dalam pengembangan aplikasi mobile yang interaktif dan fungsional.
+
 
 ## 📱 Penjelasan Aplikasi
-Aplikasi App4_Recycle merupakan aplikasi Android yang dibuat untuk menampilkan daftar buku secara sederhana dan interaktif. Aplikasi ini bertujuan agar pengguna dapat melihat informasi buku, seperti judul, penulis, dan tahun terbit dengan tampilan yang lebih rapi menggunakan RecyclerView.
 
-Saat dijalankan, aplikasi pertama kali menampilkan Splash Screen sebagai tampilan pembuka sebelum masuk ke halaman utama. Pada halaman utama, daftar buku ditampilkan dalam bentuk list. Jika pengguna memilih salah satu buku, maka akan muncul Dialog Box untuk memberikan opsi. Ketika pengguna memilih melihat detail, data buku tersebut akan dikirim ke halaman DetailActivity menggunakan Intent, lalu ditampilkan secara lengkap.
-
-Selain itu, aplikasi juga menggunakan Toast untuk menampilkan pesan singkat sebagai umpan balik, sehingga interaksi pengguna menjadi lebih informatif.
+## 🔗 Komponen Utama Aplikasi
 
 ## 📚 Penjelasan Fitur
 ### Splash Screen
@@ -212,3 +209,4 @@ Layout item_book.xml menggunakan CardView dengan sudut membulat (cardCornerRadiu
 
 ## 📑 Kesimpulan
 Dari hasil perancangan dan pembuatan aplikasi Aplikasi Daftar Buku Perpustakaan berbasis Android, dapat disimpulkan bahwa aplikasi ini berhasil mengintegrasikan fitur utama Android seperti Splash Screen, RecyclerView, Intent, Toast, dan Dialog Box yang membuat aplikasi lebih interaktif dan mudah digunakan. Laporan ini menjadi bukti proses pengembangan sekaligus sarana pembelajaran dalam memahami konsep dasar pemrograman Android, sehingga dapat bermanfaat bagi mahasiswa maupun pengembang pemula sebagai referensi dalam mengembangkan aplikasi serupa.
+
