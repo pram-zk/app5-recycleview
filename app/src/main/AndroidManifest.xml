@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App4recycle">
         <activity
-            android:name=".detail"
+            android:name=".DetailActivity"
             android:exported="false" />
         <!-- SplashActivity sebagai launcher -->
         <activity
@@ -25,7 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> <!-- Activity utama (MainActivity) -->
-        <activity android:name="com.example.app4recycle.MainActivity" />
+        <activity android:name="MainActivity" />
     </application>
 
 </manifest>

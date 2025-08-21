@@ -23,7 +23,7 @@
 
         <!-- Judul -->
         <TextView
-            android:id="@+id/tvTitle"
+            android:id="@+id/tvJudul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/imgBook"
@@ -34,10 +34,10 @@
 
         <!-- Penulis -->
         <TextView
-            android:id="@+id/tvAuthor"
+            android:id="@+id/tvPenulis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tvTitle"
+            android:layout_below="@id/tvJudul"
             android:layout_toEndOf="@id/imgBook"
             android:layout_marginStart="8dp"
             android:text="Nama Penulis"
@@ -45,10 +45,10 @@
 
         <!-- Tahun -->
         <TextView
-            android:id="@+id/tvYear"
+            android:id="@+id/tvTahun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tvAuthor"
+            android:layout_below="@id/tvPenulis"
             android:layout_toEndOf="@id/imgBook"
             android:layout_marginStart="8dp"
             android:text="2025"

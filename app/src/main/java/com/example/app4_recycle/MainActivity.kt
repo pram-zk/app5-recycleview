@@ -1,34 +1,38 @@
-package com.example.app4recycle
+package com.example.app4_recycle
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.app4_recycle.R
-import com.example.app4recycle.adapter.BookAdapter
-import java.util.ArrayList
+import com.example.app4_recycle.adapter.BukuAdapter
+import com.example.app4_recycle.model.Buku
+import com.example.app4recycle.com.example.app4_recycle.utils.RetrofitClient
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var bookAdapter: BookAdapter
-    private val bookList = ArrayList<Book>()
+
+    private lateinit var rvBuku: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        recyclerView = findViewById(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        rvBuku = findViewById(R.id.recyclerView)
+        rvBuku.layoutManager = LinearLayoutManager(this)
 
-        // Data awal buku
-        bookList.add(Book("Laskar Pelangi", "Andrea Hirata", 2005))
-        bookList.add(Book("Bumi", "Tere Liye", 2014))
-        bookList.add(Book("Negeri 5 Menara", "Ahmad Fuadi", 2009))
-        bookList.add(Book("Keren", "Iam", 2000))
-        bookList.add(Book("Bangso", "Yadi", 2002))
+        RetrofitClient.instance.getbuku().enqueue(object : Callback<List<Buku>> {
+            override fun onResponse(call: Call<List<Buku>>, response: Response<List<Buku>>) {
+                if (response.isSuccessful) {
+                    rvBuku.adapter = BukuAdapter(response.body() ?: emptyList())
+                }
+            }
 
-        // Gunakan this untuk context dan bookList untuk data
-        bookAdapter = BookAdapter(this, bookList)
-        recyclerView.adapter = bookAdapter
+            override fun onFailure(call: Call<List<Buku>>, t: Throwable) {
+                Toast.makeText(this@MainActivity, "Gagal: ${t.message}", Toast.LENGTH_LONG).show()
+            }
+        })
     }
 }
