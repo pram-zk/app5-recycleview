@@ -5,8 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app4_recycle.R
-import com.example.app4recycle.Book
-import com.example.app4recycle.BookAdapter
+import com.example.app4recycle.adapter.BookAdapter
 import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {

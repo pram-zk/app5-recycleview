@@ -1,4 +1,4 @@
-package com.example.app4recycle
+package com.example.app4recycle.adapter
 
 import android.app.AlertDialog
 import android.content.Context
@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app4_recycle.R
 import com.example.app4_recycle.detail
+import com.example.app4recycle.Book
 
 class BookAdapter(private val context: Context, private val bookList: ArrayList<Book>) :
     RecyclerView.Adapter<BookAdapter.BookViewHolder>() {
